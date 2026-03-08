@@ -3,23 +3,36 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 
+h1{
+  font-family: 'Playfair Display', serif;
+}
+
 header {
+  background-image: url("../img/BTS1.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 60px;
-  text-align: center;
-  background: #1abc9c;
   color: white;
+  text-align: center;
+  position:relative;
+}
+
+header p{
+font-family: "Playfair Display", serif;
+font-style: italic;
 }
 
 .navbar {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
+  background-color: #6A0DAD;
 }
 
 .navbar a {
@@ -27,9 +40,82 @@ header {
   color: #f1f1f1;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navbar :hover {
-  background-color: #dddddd;
-  color: black;
+.navbar a:hover {
+  background-color: #B185DB;
+  color: white;
 }
+
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #7B4CBF;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.main {
+  flex: 70%;
+  background-color: #E0C3FC;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  text-align: justify;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.albums{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.album{
+background:white;
+padding:15px;
+width:220px;
+border-radius:10px;
+text-decoration:none;
+color:black;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+.album:hover{
+transform:scale(1.05);
+}
+
+.album img{
+width:100%;
+border-radius:8px;
+}
+
+.album ul{
+padding-left:20px;
+font-size:14px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #B185DB;
+}
+
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+
