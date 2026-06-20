@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Yoongi</title>
+    <title>Contacto | Suga — Min Yoongi</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
@@ -13,47 +13,79 @@
 
     <header>
         <h1>Suga</h1>
-        <p>Si no puedes volar, corre. Si no puedes correr, camina. Si no puedes caminar, arrástrate.<br>Pero sigue
-            moviéndote hacia adelante</p>
+        <p>Si no puedes volar, corre. Si no puedes correr, camina. Si no puedes caminar, arrástrate.<br>
+        Pero sigue moviéndote hacia adelante.</p>
     </header>
 
-    <div class="navbar">
+    <nav class="navbar">
         <a href="index.html">Inicio</a>
         <a href="artista.html">Artista</a>
         <a href="musica.html">Música</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
 
     <div class="container">
-    
+
         <div class="main2">
+
             <div class="formcontainer">
                 <h2>Contacto</h2>
-    
-            <form>
-    
-                <label>Nombre</label><br>
-                <input type="text"><br><br>
-    
-                <label>Email</label><br>
-                <input type="email"><br><br>
-    
-                <label>Mensaje</label><br>
-                <textarea rows="4" cols="40"></textarea><br><br>
-    
-                <button type="submit">Enviar</button>
-    
-            </form>
+
+                <form>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+
+                    <label>Tipo de mensaje</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="tipo" value="sugerencia"> Sugerencia
+                        </label>
+                        <label>
+                            <input type="radio" name="tipo" value="duda"> Duda
+                        </label>
+                        <label>
+                            <input type="radio" name="tipo" value="colaboracion"> Colaboración
+                        </label>
+                    </div>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                    <label>Preferencias</label>
+                    <div class="check-group">
+                        <label>
+                            <input type="checkbox" name="terminos"> Acepto los términos y condiciones
+                        </label>
+                        <label>
+                            <input type="checkbox" name="newsletter"> Quiero recibir el newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+
+                <address>
+                    <strong>Suga Fan Page</strong><br>
+                    Creado por: Michelle Domínguez<br>
+                    Correo: <a href="mailto:contacto@sugafanpage.com">contacto@sugafanpage.com</a><br>
+                    Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@sugafanpage</a><br>
+                    Twitter / X: <a href="https://twitter.com" target="_blank" rel="noopener">@sugafanpage</a>
+                </address>
+
             </div>
-    
+
         </div>
-    
+
     </div>
 
     <footer>
-        <h6>by Michelle Domínguez</h6>
+        <p>by Michelle Domínguez &mdash; Programación Web</p>
     </footer>
 
 </body>
-
 </html>
